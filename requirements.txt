@@ -1,0 +1,124 @@
+# 🩸 AI Blood Cell Diagnosis System
+
+An end-to-end **Explainable AI system** that analyzes blood cell data to detect abnormalities, predict diseases, and provide human-readable medical explanations.
+
+---
+
+## 🚀 Features
+
+* 🔍 **Anomaly Detection**
+
+  * Classifies cells as Normal or Abnormal
+  * Provides confidence scores
+
+* 🧬 **Disease Prediction**
+
+  * Predicts conditions like Leukemia, Anemia, Infection
+
+* 🧠 **Explainable AI (SHAP)**
+
+  * Shows why a prediction was made
+  * Feature-level contribution analysis
+
+* 🏥 **Human-Readable Medical Explanation**
+
+  * Converts model output into clinical reasoning
+
+* 📊 **Interactive UI (Streamlit)**
+
+  * Upload CSV
+  * Select cell
+  * Get instant diagnosis
+
+---
+
+## 🧠 Tech Stack
+
+* Python
+* Scikit-learn (Random Forest)
+* SHAP (Explainable AI)
+* Streamlit (UI)
+* Pandas, NumPy
+
+---
+
+## 📂 Project Structure
+
+```
+blood-cell-generator/
+│
+├── data/
+│   ├── blood_cell_anomaly_detection.csv
+│   └── cleaned_data.csv
+│
+├── models/
+│   ├── classifier.pkl
+│   ├── disease_model.pkl
+│   └── disease_columns.json
+│
+├── src/
+│   ├── train_model.py
+│   ├── train_disease_model.py
+│   ├── data_cleaning.py
+│   └── explain.py
+│
+├── app.py
+├── requirements.txt
+└── README.md
+```
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/BeastBaeOP7/bloodcell-ai.git
+cd blood-cell-ai
+```
+
+### 2️⃣ Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3️⃣ Run the app
+
+```bash
+streamlit run app.py
+```
+
+---
+
+## 📸 Demo
+
+Upload `cleaned_data.csv`, select a row, and the system will:
+
+* Detect anomaly
+* Predict disease
+* Explain reasoning
+* Show SHAP visualization
+
+---
+
+## 🎯 Key Learning Outcomes
+
+* Built an end-to-end ML pipeline
+* Implemented Explainable AI using SHAP
+* Designed a real-world healthcare application
+* Solved feature mismatch issues in production models
+
+---
+
+## ⚠️ Disclaimer
+
+This project is for educational purposes only and not intended for medical diagnosis.
+
+---
+
+## 👨‍💻 Author
+
+Gautham
+AI / ML Enthusiast
